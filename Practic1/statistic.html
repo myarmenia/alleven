@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="statistic.css" />
+  </head>
+
+  <body>
+    <div class="Logo">
+      <img
+        src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%201211.svg"
+      />
+      <nav class="Search">
+        <div class="Icons">
+          <img
+            src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%20(1).svg"
+          />
+          <img
+            src="file:///C:/Users/User/Desktop/Practic1/staticimg/Notification.svg"
+          />
+          <p>Имя Фамилия</p>
+          <img
+            src="file:///C:/Users/User/Desktop/Practic1/staticimg/Rectangle%2082.svg"
+          />
+        </div>
+      </nav>
+    </div>
+    <header class="Header">
+      <header class="Header1">
+        <nav class="Menu">
+          <ul>
+            <li>
+              <img
+                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Profile.svg"
+              /><a href="">Пользователи</a>
+            </li>
+            <li>
+              <img
+                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%201107.svg"
+              />
+              <a href="">Категории</a>
+            </li>
+            <li>
+              <img
+                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group.svg"
+              /><a href="">События</a>
+            </li>
+            <li>
+              <img
+                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%201401.svg"
+              /><a href=""> Статистика </a>
+            </li>
+            <li>
+              <img
+                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Vector.svg"
+              /><a href="">Уведомления </a>
+            </li>
+            <li>
+              <img
+                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%201397%20(1).svg"
+              /><a href="">Документы </a>
+            </li>
+          </ul>
+          <div class="Exit">
+            <img
+              src="file:///C:/Users/User/Desktop/Practic1/staticimg/Frame.svg"
+            /><a href=""> Выход</a>
+          </div>
+        </nav>
+      </header>
+      <div class="Header2">
+        <header class="Header22">
+          <p>Главная > Статистика</p>
+          <article class="Article1">
+            <div class="Canvas1">
+              <div class="Canvas11">
+                <p>Пользователи</p>
+                <canvas id="myChart"> </canvas>
+              </div>
+            </div>
+            <div class="Canvas1">
+              <div class="Canvas11">
+                <p>Количество событий</p>
+                <div class="Canvas11Filter">
+                  <div>
+                    <p>Месяц</p>
+                    <img
+                      src="file:///C:/Users/User/Desktop/Practic1/staticimg/Vector%20(1).svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <canvas id="myChart1"></canvas>
+            </div>
+            <div class="Canvas1">
+              <div class="Canvas11">
+                <p>Статус событий</p>
+                <canvas
+                  id="myChart2"
+                  style="width: 100%; max-width: 600px"
+                ></canvas>
+              </div>
+            </div>
+          </article>
+        </header>
+        <article class="Article2">
+          <div class="Canvas2">
+            <div class="Canvas22">
+              <p>События по категориям</p>
+              <div class="Canvas11Filter">
+                <div>
+                  <p>Август</p>
+                  <img
+                    src="file:///C:/Users/User/Desktop/Practic1/staticimg/Vector%20(1).svg"
+                  />
+                </div>
+              </div>
+              <canvas
+                id="myChart3"
+                style="width: 100%; max-width: 540px"
+              ></canvas>
+            </div>
+          </div>
+        </article>
+      </div>
+    </header>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <script src="statistic.js"></script>
+</html>

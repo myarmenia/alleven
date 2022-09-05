@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="Message">
+      <div class="MessageText">
+        <img
+          src="file:///C:/Users/User/Desktop/Practic1/img/Group%20931.svg"
+          id="MessageTextIcon"
+          onclick="RemoveMessage()"
+        />
+        <p>
+          Ваш запрос отправлен администратору. К вам на почту поступит письмо с
+          подтверждением
+        </p>
+      </div>
+    </div>
+    <header>
+      <div class="main">
+        <img
+          src="file:///C:/Users/User/Desktop/Practic1/img/Group%201400.svg"
+          class="item"
+          style="animation-delay: -2.5s"
+        />
+      </div>
+      <div class="Reg">
+        <div class="RegLogo">
+          <img
+            src="file:///C:/Users/User/Desktop/Practic1/img/Group%201216.svg"
+          />
+        </div>
+        <h2>Регистрация</h2>
+        <div>
+          <input
+            placeholder="Имя"
+            oninput="Name()"
+            id="Name"
+            class="Inp"
+            required
+          />
+          <small id="Error"></small>
+        </div>
+        <div>
+          <input
+            placeholder="Фамилия"
+            oninput="surName()"
+            id="surName"
+            class="Inp"
+            required
+          />
+          <small id="Error1"></small>
+        </div>
+        <div>
+          <input
+            type="email"
+            placeholder="email"
+            oninput="Email()"
+            id="Email"
+            class="Inp"
+            required
+          />
+          <small id="Error2"></small>
+        </div>
+        <div>
+          <input
+            type="tel"
+            placeholder="Телефон"
+            id="Tel"
+            oninput="Tel()"
+            required
+          />
+          <small id="Error3"></small>
+        </div>
+        <div>
+          <input
+            type="password"
+            placeholder="Пароль"
+            id="Pass"
+            class="Inp"
+            oninput="Password()"
+            required
+          />
+          <small id="Error4"></small>
+        </div>
+        <div>
+          <input
+            type="password"
+            oninput="passwordRep()"
+            placeholder="Повторить пароль"
+            id="PassRep"
+            class="Inp"
+          />
+          <small id="Error5"></small>
+        </div>
+
+        <button onclick="RegEnd()">Регистрация</button>
+        <div class="RegEnd">
+          <p>Уже зарегистрированы?</p>
+          <a href="file:///C:/Users/User/Desktop/Practic1/index.html">Логин</a>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script src="script.js"></script>
+</html>

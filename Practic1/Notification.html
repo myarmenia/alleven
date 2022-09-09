@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="statistic.css" />
+    <link rel="stylesheet" href="Notification.css" />
+  </head>
+  <body>
+    <div class="Logo">
+      <img src="staticimg/Group%201211.svg" />
+      <nav class="Search">
+        <div class="Icons">
+          <img src="staticimg/Group%20(1).svg" />
+          <img src="staticimg/Notification.svg" />
+          <p>Имя Фамилия</p>
+          <img src="staticimg/Rectangle%2082.svg" />
+          <div class="container" onclick="burgerMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <header class="Header">
+      <header class="Header1">
+        <nav class="Menu">
+          <ul>
+            <li>
+              <img src="staticimg/Profile.svg" /><a href="">Пользователи</a>
+            </li>
+            <li>
+              <img src="staticimg/Group%201107.svg" />
+              <a href="">Категории</a>
+            </li>
+            <li><img src="staticimg/Group.svg" /><a href="">События</a></li>
+            <li>
+              <img src="staticimg/Group%201401.svg" /><a href="">
+                Статистика
+              </a>
+            </li>
+            <li>
+              <img src="staticimg/Vector.svg" /><a href="">Уведомления </a>
+            </li>
+            <li>
+              <img src="staticimg/Group%201397%20(1).svg" /><a href=""
+                >Документы
+              </a>
+            </li>
+          </ul>
+          <div class="Exit">
+            <img src="staticimg/Frame.svg" /><a href=""> Выход</a>
+          </div>
+        </nav>
+      </header>
+      <div class="Header2">
+        <header class="Header22">
+          <p>Главная > Уведомления</p>
+          <article class="Article1">
+            <div class="Notification">
+              <div class="Notification1">
+                <p>Создание уведомлений</p>
+              </div>
+              <form class="Form">
+                <textarea
+                  placeholder="Текст уведолмений"
+                  class="textArea"
+                ></textarea>
+              </form>
+
+              <div class="Whom">
+                <p>Кому</p>
+                <select class="WhomInp">
+                  <option value="Организаторам">Организаторам</option>
+                  <option value="Saab">Saab</option>
+                </select>
+              </div>
+              <div class="TypeNotification">
+                <p>Тип уведомлений</p>
+                <select class="TypeNotification1">
+                  <option value="По системным работам">
+                    По системным работам
+                  </option>
+                  <option value="Saab">Saab</option>
+                </select>
+              </div>
+              <div class="date">
+                <p>Дата Отправления</p>
+                <form class="Form1">
+                  <input type="date" value="ДД/ММ/ГГГГ" class="dataInp" />
+                </form>
+              </div>
+              <div class="date">
+                <p>Время отправления</p>
+                <form class="Form2">
+                  <input class="time" type="time" value="13:30" />
+                </form>
+              </div>
+              <div class="Whom3">
+                <button onClick="saveNotification()">Сохранить</button>
+              </div>
+            </div>
+            <div class="saveNotification">
+              <div class="saveNotification1">
+                <p>Запланированные</p>
+              </div>
+              <div class="addsaveNotification"></div>
+            </div>
+          </article>
+        </header>
+        <div class="notificationFooter">
+          <div class="notificationFooter1">
+            <div class="notificationFooter2">
+              <p><a href="">Создание уведомлений</a></p>
+              <div class="gic"></div>
+              <p><a href="">Новые категории</a></p>
+              <div class="gic"></div>
+              <p><a href="">Обратная связь</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script src="Notification.js"></script>
+</html>

@@ -16,7 +16,7 @@
     <div class="Message">
       <div class="MessageText">
         <img
-          src="file:///C:/Users/User/Desktop/Practic1/img/Group%20931.svg"
+          src="img/Group%20931.svg"
           id="MessageTextIcon"
           onclick="RemoveMessage()"
         />
@@ -28,30 +28,48 @@
     </div>
     <header>
       <div class="main">
-        <img
-          src="file:///C:/Users/User/Desktop/Practic1/img/Group%201400.svg"
-          class="item"
-          style="animation-delay: -2.5s"
-        />
+        <div class="lllll">          
+          <div id="myDIV">
+            <div id="myDIV1">
+            </div>
+            <div id="myDIV2">
+            </div>
+            <div id="myDIV3">
+            </div>
+            <div id="myDIV4">
+            </div>
+            <div id="myDIV5">
+            </div>
+        </div>
+        <div id="myDIVttt">
+            <div id="myDIV11">
+            </div>
+            <div id="myDIV22">
+            </div>
+            <div id="myDIV33">
+            </div>
+            <div id="myDIV44">
+            </div>
+             <div id="myDIV55">
+            </div>
+        </div>         
+        </div>
       </div>
       <div class="Reg">
         <div class="RegLogo">
-          <img
-            src="file:///C:/Users/User/Desktop/Practic1/img/Group%201216.svg"
-          />
+          <img src="img/Group%201216.svg" />
         </div>
         <h2>Регистрация</h2>
         <div>
-          <input
-            placeholder="Имя"
-            oninput="Name()"
-            id="Name"
-            class="Inp"
-            required
-          />
-          <small id="Error"></small>
-        </div>
-        <div>
+          
+        <input
+          placeholder="Имя"
+          oninput="Name()"
+          id="Name"
+          class="Inp"
+          required
+        />
+        <small id="Error" class="Error"></small>      
           <input
             placeholder="Фамилия"
             oninput="surName()"
@@ -59,9 +77,7 @@
             class="Inp"
             required
           />
-          <small id="Error1"></small>
-        </div>
-        <div>
+          <small id="Error1" class="Error"></small>     
           <input
             type="email"
             placeholder="email"
@@ -70,19 +86,16 @@
             class="Inp"
             required
           />
-          <small id="Error2"></small>
-        </div>
-        <div>
+          <small id="Error2" class="Error"></small>      
           <input
             type="tel"
             placeholder="Телефон"
             id="Tel"
+            class="Inp"
             oninput="Tel()"
             required
           />
-          <small id="Error3"></small>
-        </div>
-        <div>
+          <small id="Error3" class="Error"></small>
           <input
             type="password"
             placeholder="Пароль"
@@ -91,9 +104,7 @@
             oninput="Password()"
             required
           />
-          <small id="Error4"></small>
-        </div>
-        <div>
+          <small id="Error4" class="Error"></small>     
           <input
             type="password"
             oninput="passwordRep()"
@@ -101,15 +112,14 @@
             id="PassRep"
             class="Inp"
           />
-          <small id="Error5"></small>
+          <small id="Error5" class="Error"></small>
         </div>
-
+        
         <button onclick="RegEnd()">Регистрация</button>
         <div class="RegEnd">
           <p>Уже зарегистрированы?</p>
-          <a href="file:///C:/Users/User/Desktop/Practic1/index.html">Логин</a>
+          <a href="index.html">Логин</a>
         </div>
-      </div>
     </header>
   </body>
   <script src="script.js"></script>

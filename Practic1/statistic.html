@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="statistic.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-
   <body>
     <div class="Logo">
-      <img
-        src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%201211.svg"
-      />
+      <img src="staticimg/Group%201211.svg" />
       <nav class="Search">
         <div class="Icons">
-          <img
-            src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%20(1).svg"
-          />
-          <img
-            src="file:///C:/Users/User/Desktop/Practic1/staticimg/Notification.svg"
-          />
+          <img src="staticimg/Group%20(1).svg" />
+          <img src="staticimg/Notification.svg" />
           <p>Имя Фамилия</p>
-          <img
-            src="file:///C:/Users/User/Desktop/Practic1/staticimg/Rectangle%2082.svg"
-          />
+          <img src="staticimg/Rectangle%2082.svg" />
+          <div class="container" onclick="burgerMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </div>
       </nav>
     </div>
@@ -33,41 +33,29 @@
         <nav class="Menu">
           <ul>
             <li>
-              <img
-                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Profile.svg"
-              /><a href="">Пользователи</a>
+              <img src="staticimg/Profile.svg" /><a href="">Пользователи</a>
             </li>
             <li>
-              <img
-                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%201107.svg"
-              />
+              <img src="staticimg/Group%201107.svg" />
               <a href="">Категории</a>
             </li>
+            <li><img src="staticimg/Group.svg" /><a href="">События</a></li>
             <li>
-              <img
-                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group.svg"
-              /><a href="">События</a>
+              <img src="staticimg/Group%201401.svg" /><a href="">
+                Статистика
+              </a>
             </li>
             <li>
-              <img
-                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%201401.svg"
-              /><a href=""> Статистика </a>
+              <img src="staticimg/Vector.svg" /><a href="">Уведомления </a>
             </li>
             <li>
-              <img
-                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Vector.svg"
-              /><a href="">Уведомления </a>
-            </li>
-            <li>
-              <img
-                src="file:///C:/Users/User/Desktop/Practic1/staticimg/Group%201397%20(1).svg"
-              /><a href="">Документы </a>
+              <img src="staticimg/Group%201397%20(1).svg" /><a href=""
+                >Документы
+              </a>
             </li>
           </ul>
           <div class="Exit">
-            <img
-              src="file:///C:/Users/User/Desktop/Practic1/staticimg/Frame.svg"
-            /><a href=""> Выход</a>
+            <img src="staticimg/Frame.svg" /><a href=""> Выход</a>
           </div>
         </nav>
       </header>
@@ -87,9 +75,7 @@
                 <div class="Canvas11Filter">
                   <div>
                     <p>Месяц</p>
-                    <img
-                      src="file:///C:/Users/User/Desktop/Practic1/staticimg/Vector%20(1).svg"
-                    />
+                    <img src="staticimg/Vector%20(1).svg" />
                   </div>
                 </div>
               </div>
@@ -113,15 +99,10 @@
               <div class="Canvas11Filter">
                 <div>
                   <p>Август</p>
-                  <img
-                    src="file:///C:/Users/User/Desktop/Practic1/staticimg/Vector%20(1).svg"
-                  />
+                  <img src="staticimg/Vector%20(1).svg" />
                 </div>
               </div>
-              <canvas
-                id="myChart3"
-                style="width: 100%; max-width: 540px"
-              ></canvas>
+              <canvas id="myChart3" style="max-width: 100%"></canvas>
             </div>
           </div>
         </article>

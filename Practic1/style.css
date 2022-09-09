@@ -4,29 +4,239 @@
 }
 header {
   display: flex;
+  flex-wrap: wrap;
   height: 882px;
   width: 100%;
 }
-.item {
-  animation: spinAround 15s linear infinite;
+.main {
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  background: linear-gradient(180deg, #01877d 0%, #00ada6 100%);
+  align-items: center;
+  overflow: hidden;
+}
+#myDIVttt {
+  transform-origin: top center;
+  width: 500px;
+  height: 250px;
+  border-bottom-left-radius: 250px;
+  border-bottom-right-radius: 250px;
+  background-image: url("img/Mask_group-1.png");
+  background-position: 53% 0%;
+  background-size: 779px 302px;
+  background-repeat: no-repeat;
+  color: white;
+  animation: mymove 40s infinite;
+  z-index: 0;
+}
+#myDIV {
+  transform-origin: bottom center;
+  width: 500px;
+  height: 250px;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  position: relative;
+  background-position: 53% 100%;
+  background-size: 784px 314px;
+  background-repeat: no-repeat;
+  background-image: url("img/Mask_group.png");
+  color: white;
+  animation: mymove 40s infinite;
 }
 
-.main {
-  width: 50%;
-  height: 882px;
-  background: linear-gradient(180deg, #01877d 0%, #00ada6 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#myDIVttt::after {
+  content: "";
+  position: absolute;
+  background-image: url("img/Group-1399.png");
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -48px;
+  left: 208px;
+  z-index: 10000000000000000;
+  animation: mymovell 40s infinite;
 }
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg) scale(0.7);
-  }
-  to {
-    transform: rotate(360deg) scale(0.7);
+
+#myDIV1 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group-1.png");
+  border-radius: 12%;
+  top: 20px;
+  right: 50px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove1 40s infinite;
+}
+#myDIV2 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group-2.png");
+  border-radius: 12%;
+  top: 150px;
+  right: -30px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove2 40s infinite;
+}
+#myDIV3 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group-3.png");
+  border-radius: 12%;
+  top: 150px;
+  right: 450px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove3 40s infinite;
+  background-color: transparent;
+}
+#myDIV4 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group-4.png");
+  border-radius: 12%;
+  top: 22px;
+  right: 370px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove4 40s infinite;
+  background-color: transparent;
+}
+#myDIV5 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group-5.png");
+  border-radius: 12%;
+  top: -40px;
+  right: 210px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove5 40s infinite;
+  background-color: transparent;
+}
+/* ------------------- */
+#myDIV11 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group-6.png");
+  border-radius: 12%;
+  top: 20px;
+  right: -30px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove1 40s infinite;
+  background-color: transparent;
+}
+#myDIV22 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group 1217.png");
+  border-radius: 12%;
+  top: 150px;
+  right: 50px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove2 40s infinite;
+  background-color: transparent;
+}
+#myDIV33 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group 1360.png");
+  border-radius: 12%;
+  top: 150px;
+  right: 370px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove3 40s infinite;
+  background-color: transparent;
+}
+#myDIV44 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group 1236.png");
+  border-radius: 12%;
+  top: 20px;
+  right: 450px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove4 40s infinite;
+  background-color: transparent;
+}
+#myDIV55 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/Group 1362.png");
+  border-radius: 12%;
+  top: 210px;
+  right: 210px;
+  position: absolute;
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  color: white;
+  animation: mymove5 40s infinite;
+}
+@keyframes mymove {
+  50% {
+    transform: rotate(360deg);
   }
 }
+@keyframes mymove1 {
+  50% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes mymove2 {
+  50% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes mymove3 {
+  50% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes mymove4 {
+  50% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes mymove5 {
+  50% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes mymovell {
+  50% {
+    transform: rotate(-360deg);
+  }
+}
+
 .main2 {
   width: 50%;
   height: 882px;
@@ -165,11 +375,29 @@ header {
   color: #00ada6;
 }
 @media only screen and (max-width: 600px) {
-  .animation {
-    display: none;
+  .main {
+    width: 100%;
+    height: auto;
   }
-
   .main2 {
-    width: 90%;
+    width: 100%;
+  }
+  .Log {
+    width: 100%;
+  }
+  .main2 button {
+    width: 100%;
+  }
+  .item {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main {
+    width: 100%;
+    height: 600px;
+  }
+  .main2 {
+    width: 100%;
   }
 }

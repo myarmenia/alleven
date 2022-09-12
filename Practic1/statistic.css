@@ -28,7 +28,7 @@
 }
 .Menu {
   width: 100%;
-  height: 880.4px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,15 +63,14 @@ ul {
   height: auto;
   margin-top: 42.53px;
 }
-li > a:visited {
-  color: yellow;
-}
+
 .Exit {
   width: 65%;
   height: 53.22px;
   border-top: 1px solid #ffffff;
-
-  padding-top: 10px;
+}
+.Exit > img {
+  margin-top: 20px;
 }
 .Exit > a {
   width: 50px;
@@ -143,6 +142,7 @@ li > a:visited {
 .Canvas1 {
   width: 367.25px;
   height: 349.42px;
+
   margin-top: 20px;
   background: #ffffff;
   border-radius: 10px;
@@ -164,7 +164,7 @@ li > a:visited {
   line-height: 14px;
   color: #575757;
   background: lightgrey;
-  padding-top: 12px;
+  padding-top: 20px;
   background: #f8f3f3;
 }
 .Canvas11 > p {
@@ -246,12 +246,54 @@ li > a:visited {
   margin-top: 10px;
   border-bottom: 1px solid #dadada;
 }
+.container {
+  cursor: pointer;
+  display: none;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -6px);
+}
+
+@media only screen and (max-width: 600px) {
+  .Menu {
+    display: none;
+  }
+}
 @media only screen and (max-width: 992px) {
   .Canvas1 {
     width: 100%;
+    height: auto;
   }
+  .container {
+    cursor: pointer;
+    display: block;
+  }
+
   #myChart {
     margin-top: 11px;
+    width: 700px;
+    height: 291px;
   }
   .Header1 {
     width: 99%;

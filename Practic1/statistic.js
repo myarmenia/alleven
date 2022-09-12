@@ -7,6 +7,11 @@ var barColors = ["#FEE798", "#00ADA6"];
 
 new Chart("myChart", {
   type: "doughnut",
+  options: {
+    title: {
+      display: true,
+    },
+  },
   data: {
     labels: xValues,
     datasets: [
@@ -16,12 +21,9 @@ new Chart("myChart", {
       },
     ],
   },
-  options: {
-    title: {
-      display: true,
-    },
-  },
 });
+console.log(Chart);
+
 var xValues1 = ["Янв.", "Фев", "Март", "Апр.", "Май", "Июнь"];
 new Chart("myChart1", {
   type: "line",
@@ -82,12 +84,23 @@ var xValues3 = [
   "Другoe",
 ];
 var yValues3 = [0, 100, 500, 1000, 2000, 3000, 4000, 5000, 10000];
-var barColors3 = " linear-gradient(180deg, #00ADA6 0%, #01877D 100%);";
+var barColors3 = [
+  "#00A29A",
+  "#00A099",
+  "#00A39B",
+  "#00A098",
+  "#01A69E",
+  "#00897F",
+  "#01ABA4",
+  "#019086",
+  "#01958C",
+];
 
 new Chart("myChart3", {
   type: "bar",
   data: {
     labels: xValues3,
+
     datasets: [
       {
         backgroundColor: barColors3,
@@ -102,3 +115,12 @@ new Chart("myChart3", {
     },
   },
 });
+function burgerMenu(icon) {
+  const menu = document.querySelector(".Menu");
+  icon.classList.toggle("change");
+  if (menu.style.display == "none") {
+    menu.style.display = "flex";
+  } else {
+    menu.style.display = "none";
+  }
+}

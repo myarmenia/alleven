@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Event.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Logo">
+      <img src="../staticimg/Group%201211.svg" />
+      <nav class="Search">
+        <div class="Icons">
+          <img src="../staticimg/Group%20(1).svg" />
+          <img src="../staticimg/Notification.svg" />
+          <p>Имя Фамилия</p>
+          <img src="../staticimg/Rectangle%2082.svg" />
+          <div class="container" onclick="burgerMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <header class="Header">
+      <header class="Header1">
+        <nav class="Menu">
+          <ul>
+            <li onclick="toClients()">
+              <img src="./clients/Profile.svg" class="navbarImg" /><a
+                class="menuA"
+                href="#"
+                >Пользователи</a
+              >
+            </li>
+            <li>
+              <img src="../staticimg/Group%201107.svg" />
+              <a class="menuA" href="#">Категории</a>
+            </li>
+            <li onclick="toEvent()">
+              <img
+                src="./clients/GroupForEvent(active).svg"
+                class="navbarImg"
+              /><a class="menuA activeMenu" href="#">События</a>
+            </li>
+            <li>
+              <img src="../staticimg/Group%201401.svg" /><a
+                class="menuA"
+                href="#"
+              >
+                Статистика
+              </a>
+            </li>
+            <li>
+              <img src="../staticimg/Vector.svg" /><a class="menuA" href="#"
+                >Уведомления
+              </a>
+            </li>
+            <li>
+              <img src="../staticimg/Group%201397%20(1).svg" /><a
+                class="menuA"
+                href="#"
+                >Документы
+              </a>
+            </li>
+          </ul>
+          <div class="Exit">
+            <img src="../staticimg/Frame.svg" /><a class="menuA" href="#">
+              Выход</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <div id="events">
+        <div class="eventMainBody">
+          <div class="eventHead">
+            <div class="eventHeadFirstPart">
+              <p><a href="#">Главная</a> > <a href="#">События</a>  > <a href="#" id="changeNavText">Все событии</a></p>
+            </div>
+            <div id="eventHeadSecondPart" onclick="filterShow()">
+              Фильтр
+              <img src="../staticimg/Group(10).svg" />
+            </div>
+          </div>
+          <div id="eventBody">
+            <div id="eventBodyHead">
+              <p>Топ</p>
+              <img src="../staticimg/delete 1.svg" />
+            </div>
+            <div id="eventBodyContent">
+              <table id="table">
+                <thead>
+                  <tr>
+                    <th
+                      class="td1"
+                      style="padding: 11px 8px; text-align: center"
+                    >
+                      №
+                    </th>
+                    <th class="td1">Категория</th>
+                    <th class="td1">Название событий</th>
+                    <th class="td1">Организатор</th>
+                    <th class="td1">Статус</th>
+                    <th class="td1">Дата/период</th>
+                    <th class="td1">Место прохождения</th>
+                    <th class="td1">Рейтинг</th>
+                    <th class="td1">Редактировать</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody1"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="allEvents">
+        <div class="eventMainBody">
+          <div class="eventHead">
+            <div class="eventHeadFirstPart">
+              <p>
+                <a href="#">Главная</a> >
+                <a href="#" onclick="changeToAllEvents()">Все события</a> >
+                <a href="#">Событие</a>
+              </p>
+            </div>
+          </div>
+          <div id="allEvMainDiv">
+            <div class="allEvBox">
+              <div id="allEvBox_header">
+                <h4>События</h4>
+                <p>Одобрено</p>
+              </div>
+
+              <hr />
+              <div class="allEvBoxCont">
+                <div id="pics1">
+                  <img src="../staticimg/Rectangle 69.svg" class="allEvImg" />
+                  <!-- <img src="../staticimg/image 32.svg" class="allEvImg" />
+                  <img src="../staticimg/image 32 (1).svg" class="allEvImg" /> -->
+                </div>
+                <div class="allEvBoxContDiv">
+                  <div id="boxPersonName">
+                    <h6>“Название” событий</h6>
+                    <div id="emotions">
+                      <div onclick="wereGoingToCome()">
+                        <img src="../staticimg/walking 1.svg" />
+                        <a>200</a>
+                      </div>
+                      <div>
+                        <img src="../staticimg/Vector 80.svg" />
+                        480
+                      </div>
+                      <div>
+                        <img src="../staticimg/Vector(30).svg" />
+                        300
+                      </div>
+                      <div>
+                        <img src="../staticimg/Vector (20).svg" />
+                        5000
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="boxCatalog">
+                    <p>Категория</p>
+                    <a href="#" onclick="createClients()"
+                      >Пришли на событие: 520</a
+                    >
+                  </div>
+                  <div id="boxDescription">
+                    <p>
+                      <span>Описание</span> Повседневная практика показывает,
+                      что укрепление и развитие структуры играет важную роль в
+                      формировании соответствующий условий активизации.
+                      Повседневная укрепление и развитие структуры играет важную
+                      роль в формировании соответствующий условий активизации.
+                    </p>
+                  </div>
+                  <p class="boxP"><span>Дата:</span> 07.07.2022-14.07.2022</p>
+                  <p class="boxP"><span>Время:</span> 18:30</p>
+                  <p class="boxP"><span>Телефон:</span> +7 123 456 7890</p>
+                  <p class="boxP"><span>Веб сайт:</span> www.alleven.com</p>
+                  <p class="boxP boxPflex">
+                    <span>Место прохождения:</span>
+                    <img
+                      src="../staticimg/locationIcon.svg"
+                      style="cursor: pointer"
+                    />
+                  </p>
+                  <p></p>
+                  <p class="boxP">
+                    <span>Ссылка на билеты:</span>
+                    <a
+                      href="https://www.figma.com/file/c2Xw6PGO2sT1b3PHj6VuxR/Alleven?node-id=568%3A11147"
+                    >
+                      https://www.figma.com/file/c2Xw6PGO2sT1b3PHj6VuxR/Alleven?node-id=568%3A11147
+                    </a>
+                  </p>
+                  <p class="boxP">
+                    <span class="biggerLetter">Почему я должен посетить?</span
+                    ><br />
+                    Повседневная практика показывает, что укрепление Развитие
+                    структуры играет важную роль в формировании соответствующий
+                    условий Повседневная практика показывает, что укрепление
+                    Развитие структуры играет важную роль в формировании
+                    соответствующий условий
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="allEvBox">
+              <ul type="none" id="boxUl">
+                <li class="boxLi" onclick="createPhotos() ">
+                  <a href="#" class="a1 active">Галерея</a>
+                </li>
+                <hr />
+                <li class="boxLi" onclick="createComments()">
+                  <a href="#" class="a1">Комментарии</a>
+                </li>
+                <hr />
+                <li class="boxLi" onclick="createClients()">
+                  <a href="#" class="a1">Список посетивших</a>
+                </li>
+              </ul>
+              <hr />
+              <div class="allEvBoxCont ChangedAllEvBoxCont">
+                <p id="p1" class="p1">Добавленные фото/видео</p>
+                <div id="photos" class="photos"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="newEvent">
+        <div class="eventMainBody">
+          <div class="eventHead">
+            <div class="eventHeadFirstPart">
+              <p><a href="#">Главная</a> > <a href="#">Новые События</a></p>
+            </div>
+            <div id="eventHeadSecondPart" onclick="filterShow()">
+              Фильтр
+              <img src="../staticimg/Group(10).svg" />
+            </div>
+          </div>
+          <div id="eventBody">
+            <div id="eventBodyHead">
+              <p>Топ</p>
+              <img src="../staticimg/delete 1.svg" />
+            </div>
+            <div id="eventBodyContent">
+              <table id="table">
+                <thead>
+                  <tr>
+                    <th
+                      class="td1"
+                      style="padding: 11px 8px; text-align: center"
+                    >
+                      №
+                    </th>
+                    <th class="td1">Категория</th>
+                    <th class="td1">Название событий</th>
+                    <th class="td1">Организатор</th>
+                    <th class="td1">Статус</th>
+                    <th class="td1">Дата/период</th>
+                    <th class="td1">Место прохождения</th>
+                    <th class="td1 th_noPadding">Одобрить/<br />Отклонить</th>
+                    <th class="td1">Редактировать</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody2"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="changeEvent">
+        <div class="eventMainBody">
+          <div class="eventHead">
+            <div class="eventHeadFirstPart">
+              <p>
+                <a href="#">Главная</a> >
+                <a href="#">Новые События</a> >
+                <a href="#">Событие</a>
+              </p>
+            </div>
+          </div>
+          <div id="changeEvMainDiv">
+            <div id="changeEvMainDivContainer1">
+              <div id="changeEvBox_header">
+                <h4>Новое Событие</h4>
+                <div id="allowDiv">
+                  <button class="buttonAllow">Одобрить</button>
+                  <button class="buttonAllow whiteBtn" onclick="openDenyDiv()">
+                    Отклонить
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div id="changeEvMainDivContainer2">
+              <div class="changeEvBox">
+                <div class="changeEvBoxCont">
+                  <div id="pics1">
+                    <div class="changeEvDiv">
+                      <img src="./clients/GroupX.svg" />
+                    </div>
+                    <!-- <div
+                      class="changeEvDiv"
+                    >
+                      <img src="./clients/GroupX.svg" />
+                    </div>
+                    <div
+                      class="changeEvDiv"
+                    >
+                      <img src="./clients/GroupX.svg" />
+                    </div> -->
+                  </div>
+                  <div class="changeEvBoxContDiv">
+                    <input
+                      type="text"
+                      class="inputAllow"
+                      placeholder="Название событий"
+                      style="width: 240px"
+                    />
+                    <select class="inputAllow">
+                      <option selected disabled hidden>Категория</option>
+                      <option>aaaaa</option>
+                      <option>aaaaa</option>
+                      <option>aaaaa</option>
+                    </select>
+                    <div id="boxDescription">
+                      <textarea id="textarea">
+                      <span>Описание</span>Повседневная практика показывает, что укрепление и развитие структуры играет важную роль в формировании соответствующий условий активизации. 
+                      Повседневная укрепление и развитие структуры играет важную роль в формировании соответствующий условий активизации. 
+                       </textarea
+                      >
+                    </div>
+                    <div class="changeEvSMBox">
+                      <p>Дата и время начала события</p>
+                      <div>
+                        <input type="date" value="ДД/ММ/ГГГГ" class="dataInp" />
+                        <input class="time" type="time" value="20:00" />
+                      </div>
+                    </div>
+                    <div class="changeEvSMBox">
+                      <p>Дата присоединения к событию</p>
+                      <div>
+                        <input type="date" value="ДД/ММ/ГГГГ" class="dataInp" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="changeEvBox">
+                <div class="allEvBox_box2">
+                  <p class="changeHeadP">Место события</p>
+                  <div class="flex_JC_Space-between">
+                    <p class="changeText">
+                      103132, Москва, ул. Ильинка, 23, подъезд 11
+                    </p>
+                    <img
+                      src="./clients/locationIcon.svg"
+                      style="cursor: pointer"
+                    />
+                  </div>
+                </div>
+                <div class="allEvBox_box2">
+                  <p class="changeHeadP">Ссылка на билеты</p>
+                  <div style="position: relative">
+                    <input
+                      type="text"
+                      class="inputAllow inp10"
+                      placeholder="Вставьте ссылку"
+                    />
+                    <img
+                      class="imageText1"
+                      src="./clients/text1.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                  <textarea id="textarea1">
+Повседневная практика показывает, что укрепление 
+
+                    Развитие структуры играет важную роль в формировании соответствующий усл</textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notificationFooter">
+        <div class="notificationFooter1">
+          <div class="notificationFooter2">
+            <p onclick="addNewEvent()">
+              <a href="#" class="notification_a">Новые событии</a>
+            </p>
+            <div class="gic"></div>
+            <p onclick="changeToTop()">
+              <a href="#" class="notification_a">Топ</a>
+            </p>
+            <div class="gic"></div>
+            <p onclick="changeToAllEvents()">
+              <a href="#" class="notification_a active">Все событии</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+      <div id="deniedDiv">
+        <div class="eventMainBody">
+          <div class="eventHead">
+            <div class="eventHeadFirstPart">
+              <p>
+                <a href="#">Главная</a> >
+                <a href="#" onclick="changeToAllEvents()">Все события</a> >
+                <a href="#">Событие</a>
+              </p>
+            </div>
+          </div>
+          <div id="allEvMainDiv">
+            <div class="allEvBox">
+              <div id="allEvBox_header">
+                <h4>События</h4>
+                <p>Одобрено</p>
+              </div>
+
+              <hr />
+              <div class="allEvBoxCont">
+                <div id="pics1">
+                  <img src="../staticimg/Rectangle 69.svg" class="allEvImg" />
+                  <!-- <img src="../staticimg/image 32.svg" class="allEvImg" />
+                  <img src="../staticimg/image 32 (1).svg" class="allEvImg" /> -->
+                </div>
+                <div class="allEvBoxContDiv">
+                  <div id="boxPersonName">
+                    <h6>“Название” событий</h6>
+                    <div id="emotions">
+                      <div onclick="wereGoingToCome()">
+                        <img src="../staticimg/walking 1.svg" />
+                        <a>200</a>
+                      </div>
+                      <div>
+                        <img src="../staticimg/Vector 80.svg" />
+                        480
+                      </div>
+                      <div>
+                        <img src="../staticimg/Vector(30).svg" />
+                        300
+                      </div>
+                      <div>
+                        <img src="../staticimg/Vector (20).svg" />
+                        5000
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="boxCatalog">
+                    <p>Категория</p>
+                    <a href="#" onclick="createClients()"
+                      >Пришли на событие: 520</a
+                    >
+                  </div>
+                  <div id="boxDescription">
+                    <p>
+                      <span>Описание</span> Повседневная практика показывает,
+                      что укрепление и развитие структуры играет важную роль в
+                      формировании соответствующий условий активизации.
+                      Повседневная укрепление и развитие структуры играет важную
+                      роль в формировании соответствующий условий активизации.
+                    </p>
+                  </div>
+                  <p class="boxP"><span>Дата:</span> 07.07.2022-14.07.2022</p>
+                  <p class="boxP"><span>Время:</span> 18:30</p>
+                  <p class="boxP"><span>Телефон:</span> +7 123 456 7890</p>
+                  <p class="boxP"><span>Веб сайт:</span> www.alleven.com</p>
+                  <p class="boxP boxPflex">
+                    <span>Место прохождения:</span>
+                    <img
+                      src="../staticimg/locationIcon.svg"
+                      style="cursor: pointer"
+                    />
+                  </p>
+                  <p></p>
+                  <p class="boxP">
+                    <span>Ссылка на билеты:</span>
+                    <a
+                      href="https://www.figma.com/file/c2Xw6PGO2sT1b3PHj6VuxR/Alleven?node-id=568%3A11147"
+                    >
+                      https://www.figma.com/file/c2Xw6PGO2sT1b3PHj6VuxR/Alleven?node-id=568%3A11147
+                    </a>
+                  </p>
+                  <p class="boxP">
+                    <span class="biggerLetter">Почему я должен посетить?</span
+                    ><br />
+                    Повседневная практика показывает, что укрепление Развитие
+                    структуры играет важную роль в формировании соответствующий
+                    условий Повседневная практика показывает, что укрепление
+                    Развитие структуры играет важную роль в формировании
+                    соответствующий условий
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="allEvBox">
+              <p id="deniedP">Причина отклонения События</p>
+              <hr />
+              <div id="fillResponseMessage"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="filter">
+      <div id="filterBox1">
+        <select>
+          <option value="" selected disabled hidden>Категория</option>
+          <option></option>
+        </select>
+        <input placeholder="Название" />
+        <button>Поиск</button>
+      </div>
+      <div id="filterBox2">
+        <p>По дате</p>
+        <input type="date" />
+        <input type="date" id="period" />
+        <div id="divCheckbox">
+          <input type="checkbox" id="checkbox1" onclick="period()" />
+          <span id="span1">период</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="denyDivBackDiv">
+      <div id="denyDiv">
+        <div id="denyDivCont1">
+          <p>Причина отклонения События</p>
+          <img src="./clients/GroupX.svg" onclick="closeDenyDiv()" />
+        </div>
+        <div id="denyDivCont2">
+          <textarea
+            id="denyTextarea"
+            cols="20"
+            rows="10"
+            placeholder="Причина"
+          ></textarea>
+          <button onclick="getTextareaValue()">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <script src="Event.js"></script>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clients2 (user)</title>
+    <link rel="stylesheet" href="./Clients2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="Logo">
+      <img src="../pics/Group 1211.svg" />
+      <nav class="Search">
+        <div class="Icons1">
+          <img src="../pics/Group (1).svg" onclick="search()" id="searchBtn" />
+          <img src="../pics/Notification.svg" />
+          <p>Имя Фамилия</p>
+          <img src="../pics/Rectangle 82.svg" />
+          <div class="container" onclick="burgerMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <header class="Header">
+      <header class="Header1">
+        <nav class="Menu">
+          <ul>
+            <li onclick="toClients()">
+              <img src="../pics/Profile(active).svg" class="navbarImg" /><a
+                class="menuA activeMenu"
+                href="#"
+                >Пользователи</a
+              >
+            </li>
+            <li>
+              <img src="../pics/Group 1107.svg" />
+              <a class="menuA" href="#">Категории</a>
+            </li>
+            <li onclick="toEvent()">
+              <img src="../pics/GroupForEvent.svg" class="navbarImg" /><a
+                class="menuA"
+                href="#"
+                >События</a
+              >
+            </li>
+            <li>
+              <img src="../pics/Group%201401.svg" /><a class="menuA" href="#">
+                Статистика
+              </a>
+            </li>
+            <li>
+              <img src="../pics/Vector.svg" /><a class="menuA" href="#"
+                >Уведомления
+              </a>
+            </li>
+            <li>
+              <img src="../pics/Group%201397%20(1).svg" /><a
+                class="menuA"
+                href="#"
+                >Документы
+              </a>
+            </li>
+          </ul>
+          <div class="Exit">
+            <img src="../pics/Frame.svg" /><a class="menuA" href="#"> Выход</a>
+          </div>
+        </nav>
+      </header>
+
+      <!--  -->
+
+      <div id="clients_1Div">
+        <div class="clientsMainBody">
+          <div class="clientsHead">
+            <div class="clientsHeadFirstPart">
+              <p>
+                <a href="#">Главная</a> >
+                <a href="#" onclick="changeToAllEvents()">Пользователи</a> >
+                <a href="#">Профиль</a>
+              </p>
+            </div>
+          </div>
+          <div id="allEvMainDiv">
+            <div class="allEvBox">
+              <div id="allEvBox_header">
+                <h4>Профиль</h4>
+              </div>
+              <hr />
+              <div class="allEvBoxCont ChangedAllEvBoxCont">
+                <div id="personImgDiv">
+                  <img src="../pics/Mask group.svg" />
+                  <div>
+                    <p>Имя Фамилия</p>
+                    <p>Посетитель</p>
+                  </div>
+                </div>
+                <p class="p2">+7 777 8888 999</p>
+                <p class="p2">example@gmail.com</p>
+                <div id="slideImagesBox">
+                  <p class="p3">Организованные события</p>
+                  <div id="slideImages">
+                    <i class="bi bi-chevron-left"></i>
+                    <div id="sliderDiv">
+                      <!-- <img src="../pics/Rectangle 66.svg" /> -->
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                    </div>
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                </div>
+                <div id="slideImagesBox">
+                  <p class="p3">Понравившиеся события</p>
+                  <div id="slideImages">
+                    <i class="bi bi-chevron-left"></i>
+                    <div id="sliderDiv">
+                      <!-- <img src="../pics/Rectangle 66.svg" /> -->
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                    </div>
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                </div>
+                <div id="slideImagesBox">
+                  <p class="p3">Посетившие события</p>
+                  <div id="slideImages">
+                    <i class="bi bi-chevron-left"></i>
+                    <div id="sliderDiv">
+                      <!-- <img src="../pics/Rectangle 66.svg" /> -->
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                      <img src="../pics/image 28.svg" class="imgItem" />
+                    </div>
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                </div>
+
+                <!-- ------------------------------------------------- -->
+              </div>
+            </div>
+
+            <div class="allEvBox">
+              <ul type="none" id="boxUl">
+                <li class="boxLi" onclick="createPhotos() ">
+                  <a href="#" class="a1 active">Галерея</a>
+                </li>
+                <hr />
+                <li class="boxLi" onclick="createComments()">
+                  <a href="#" class="a1">Комментарии</a>
+                </li>
+              </ul>
+              <hr />
+              <div class="allEvBoxCont ChangedAllEvBoxCont">
+                <p id="p1" class="p1">Добавленные фото/видео</p>
+                <div id="photos" class="photos"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal_1 STARTS -->
+
+      <div id="SearchModal">
+        <p>Фильтр</p>
+        <div id="inputContainer">
+          <div id="filterBox1">
+            <input placeholder="Имя Фамилия" />
+            <input placeholder="Роль" />
+            <input placeholder="Номер телефона" />
+            <input placeholder="Статус" />
+          </div>
+          <div id="filterBox2">
+            <p>По дате регистрации</p>
+            <input type="date" />
+            <input type="date" id="period" />
+            <div id="divCheckbox">
+              <input type="checkbox" id="checkbox1" onclick="period()" />
+              <span id="span1">период</span>
+            </div>
+          </div>
+        </div>
+        <button>Поиск</button>
+      </div>
+
+      <!------------------- Modal_1 ENDS --------------------->
+    </header>
+
+    <script src="./Clients2.js"></script>
+  </body>
+</html>

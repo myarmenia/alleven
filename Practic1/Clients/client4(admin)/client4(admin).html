@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clients(admin)</title>
+    <link rel="stylesheet" href="./client4(admin).css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Logo">
+      <img src="../pics/Group 1211.svg" />
+      <nav class="Search">
+        <div class="Icons1">
+          <img src="../pics/Group (1).svg" onclick="search()" id="searchBtn" />
+          <img src="../pics/Notification.svg" />
+          <p>Имя Фамилия</p>
+          <img src="../pics/Rectangle 82.svg" />
+          <div class="container" onclick="burgerMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <header class="Header">
+      <header class="Header1">
+        <nav class="Menu">
+          <ul>
+            <li onclick="toClients()">
+              <img src="../pics/Profile(active).svg" class="navbarImg" /><a
+                class="menuA activeMenu"
+                href="#"
+                >Пользователи</a
+              >
+            </li>
+            <li>
+              <img src="../pics/Group 1107.svg" />
+              <a class="menuA" href="#">Категории</a>
+            </li>
+            <li onclick="toEvent()">
+              <img src="../pics/GroupForEvent.svg" class="navbarImg" /><a
+                class="menuA"
+                href="#"
+                >События</a
+              >
+            </li>
+            <li>
+              <img src="../pics/Group%201401.svg" /><a class="menuA" href="#">
+                Статистика
+              </a>
+            </li>
+            <li>
+              <img src="../pics/Vector.svg" /><a class="menuA" href="#"
+                >Уведомления
+              </a>
+            </li>
+            <li>
+              <img src="../pics/Group%201397%20(1).svg" /><a
+                class="menuA"
+                href="#"
+                >Документы
+              </a>
+            </li>
+          </ul>
+          <div class="Exit">
+            <img src="../pics/Frame.svg" /><a class="menuA" href="#"> Выход</a>
+          </div>
+        </nav>
+      </header>
+
+      <div id="clientAdminContainer">
+        <div id="clients">
+          <div class="clientsMainBody">
+            <div class="clientsHead">
+              <div class="clientsHeadFirstPart">
+                <p>
+                  <a href="#">Главная</a> >
+                  <a href="#">Пользователи</a>
+                </p>
+              </div>
+              <!-- <div id="clientsHeadSecondPart" onclick="filterShow()">
+              Фильтр
+              <img src="../pics/Group(10).svg" />
+            </div> -->
+            </div>
+            <div id="clientsBody">
+              <div id="clientsBodyHead">
+                <p>Доступы</p>
+              </div>
+              <div class="clientsBodyContent cl1">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <th
+                        class="td100"
+                        style="padding: 11px 8px; text-align: center"
+                      >
+                        №
+                      </th>
+                      <th class="td100">Имя Фамилия</th>
+                      <th class="td100">Номер Телефона</th>
+                      <th class="td100">Email</th>
+                      <th class="td100">Дата регистрации</th>
+                      <th class="td100">Роль</th>
+                      <th class="td100">Профиль</th>
+                      <th class="td100">Подтвердить</th>
+                      <th class="td100">Удалить</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody2"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------------------------------------------------------------------------- -->
+
+        <div id="clients">
+          <div class="clientsMainBody">
+            <div id="clientsBody">
+              <div id="clientsBodyHead">
+                <p>Доступы</p>
+              </div>
+              <div class="clientsBodyContent cl2">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <th
+                        class="td100"
+                        style="padding: 11px 8px; text-align: center"
+                      >
+                        №
+                      </th>
+                      <th class="td100">Имя Фамилия</th>
+                      <th class="td100">Номер Телефона</th>
+                      <th class="td100">Email</th>
+                      <th class="td100">Дата регистрации</th>
+                      <th class="td100">Роль</th>
+                      <th class="td100">Профиль</th>
+                      <th class="td100">Блокировaть</th>
+                      <th class="td100">Удалить</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody1"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Modal_1 STARTS -->
+
+    <div id="SearchModal">
+      <p>Фильтр</p>
+      <div id="inputContainer">
+        <div id="filterBox1">
+          <input placeholder="Имя Фамилия" />
+          <input placeholder="Роль" />
+          <input placeholder="Номер телефона" />
+          <input placeholder="Статус" />
+        </div>
+        <div id="filterBox2">
+          <p>По дате регистрации</p>
+          <input type="date" />
+          <input type="date" id="period" />
+          <div id="divCheckbox">
+            <input type="checkbox" id="checkbox1" onclick="period()" />
+            <span id="span1">период</span>
+          </div>
+        </div>
+      </div>
+      <button onclick="search()">Поиск</button>
+    </div>
+
+    <!------------------- Modal_1 ENDS --------------------->
+
+    <!--------- MODAL_2 __STARTS__ ------------>
+
+    <div id="denyDivBackDiv">
+      <div id="denyDiv">
+        <div id="denyDivCont1">
+          <img src="../pics/GroupX.svg" onclick="banClose()" />
+        </div>
+        <div id="denyDivCont2">
+          <p id="fillName">
+            Вы действительно хотите заблокировать пользователя
+            <span id="chooseName">“Имя Фамилия”</span>?
+          </p>
+          <div style="display: flex; gap: 17px">
+            <button class="buttonAllow whiteBtn" onclick="banClose()">
+              Нет
+            </button>
+            <button class="buttonAllow" onclick="banClient()">Да</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------- Modal_2 ENDS -------->
+
+
+    <!--------- MODAL_3 __STARTS__ ------------>
+
+    <div id="denyDivBackDiv1">
+      <div id="denyDiv">
+        <div id="denyDivCont1">
+          <img src="../pics/GroupX.svg" onclick="deleteOpen1()" />
+        </div>
+        <div id="denyDivCont2">
+          <p id="fillName">
+            Вы действительно хотите заблокировать пользователя
+            <span id="chooseName1">“Имя Фамилия”</span>?
+          </p>
+          <div style="display: flex; gap: 17px">
+            <button class="buttonAllow whiteBtn" onclick="deleteClose()">
+              Нет
+            </button>
+            <button class="buttonAllow" onclick="deleteClient()">Да</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------- Modal_3 ENDS -------->
+
+    <script src="./client4(admin).js"></script>
+  </body>
+</html>

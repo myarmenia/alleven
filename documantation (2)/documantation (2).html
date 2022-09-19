@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>documantation (2)</title>
+    <link rel="stylesheet" href="./documantation (2).css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div class="Logo">
+      <img src="../pics/Group 1211.svg" />
+      <nav class="Search">
+        <div class="Icons1">
+          <img src="../pics/Group (1).svg" onclick="search()" id="searchBtn" />
+          <img src="../pics/Notification.svg" />
+          <p>Имя Фамилия</p>
+          <img src="../pics/Rectangle 82.svg" />
+          <div class="container" onclick="burgerMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <header class="Header">
+      <header class="Header1">
+        <nav class="Menu">
+          <ul>
+            <li onclick="toClients()">
+              <img src="../pics/Profile.svg" class="navbarImg" /><a
+                class="menuA"
+                href="#"
+                >Пользователи</a
+              >
+            </li>
+            <li>
+              <img src="../pics/Group 1107.svg" />
+              <a class="menuA" href="#">Категории</a>
+            </li>
+            <li onclick="toEvent()">
+              <img src="../pics/GroupForEvent.svg" class="navbarImg" /><a
+                class="menuA"
+                href="#"
+                >События</a
+              >
+            </li>
+            <li>
+              <img src="../pics/Group%201401.svg" /><a class="menuA" href="#">
+                Статистика
+              </a>
+            </li>
+            <li>
+              <img src="../pics/Vector.svg" /><a class="menuA" href="#"
+                >Уведомления
+              </a>
+            </li>
+            <li>
+              <img src="../pics/menu(doc)Img.svg" /><a
+                class="menuA activeMenu"
+                href="#"
+                >Документы
+              </a>
+            </li>
+          </ul>
+          <div class="Exit">
+            <img src="../pics/Frame.svg" /><a class="menuA" href="#"> Выход</a>
+          </div>
+        </nav>
+      </header>
+
+      <!------------------------------------------------- -->
+      <!------------------------------------------------- -->
+      <!------------------------------------------------- -->
+      <!------------------------------------------------- -->
+      <!------------------------------------------------- -->
+      <!------------------------------------------------- -->
+      <!------------------------------------------------- -->
+
+      <!------- DOCUMANTATION START --------------------------->
+
+      <div id="documantation">
+        <div id="documantation_cont">
+          <div id="documantation_header">
+            <p>
+              <a href="#" class="linkA"> Главная </a> >
+              <a href="#" class="linkA"> Документы </a> >
+              <a href="#" class="linkA"> Список подписавших пользователей </a>
+            </p>
+          </div>
+          <div id="clientsBody">
+            <div id="clientsBodyHead">
+              <p>Доступы</p>
+            </div>
+            <div id="clientsBodyContent">
+              <table id="table">
+                <thead>
+                  <tr>
+                    <th
+                      class="td100"
+                      style="padding: 11px 8px; text-align: center"
+                    >
+                      №
+                    </th>
+                    <th class="td100">Имя Фамилия</th>
+                    <th class="td100">Номер Телефона</th>
+                    <th class="td100">Документ № или название</th>
+                    <th class="td100">Документ № или название</th>
+                    <th class="td100">Документ № или название</th>
+                    <th class="td100">Профиль</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody1"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------- DOCUMANTATION END --------------------------->
+
+      <!------- notificationFooter START --------------------------->
+
+      <div class="notificationFooter">
+        <div class="notificationFooter1">
+          <div class="notificationFooter2">
+            <p>
+              <a href="#" class="notification_a">Создание документов</a>
+            </p>
+            <div class="gic"></div>
+            <p>
+              <a href="#" class="notification_a active"
+                >Список подписавших пользователей</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!------- notificationFooter END --------------------------->
+    </header>
+    <script src="./documantation (2).js"></script>
+
+  </body>
+</html>

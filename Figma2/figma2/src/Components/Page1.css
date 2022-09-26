@@ -1,0 +1,151 @@
+/* body{
+     overflow: hidden;
+} */
+.Page1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/Untitled-1.svg");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Table-1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  height: 70px;
+}
+.Tap-Table {
+  align-self: flex-end;
+  line-height: 48px;
+  height: 32px;
+  width: 102px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+.Tap-Table-2 {
+  display: flex;
+  width: 575px;
+  justify-content: space-around;
+  color: #ffffff;
+  align-self: flex-end;
+  height: 32px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 48px;
+}
+
+.Table-2 {
+  display: flex;
+  justify-content: space-around;
+  height: 602px;
+  width: 100%;
+  border-radius: 0px;
+}
+.parent-1 {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 538px;
+}
+.Lorem {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 65px;
+  color: #3db12f;
+}
+.text {
+  height: 268.14px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.img-group {
+  display: flex;
+}
+
+.parent-2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 556.66px;
+  height: 686.83px;
+  background-image: url("./img/mockup3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media only screen and (max-width: 600px) {
+  .Tap-Table {
+    font-size: 12px;
+  }
+  .Tap-Table-2{
+    font-size: 12px;
+  }
+  .Lorem {
+    font-size: 17px;
+  }
+  .text {
+    height: 200px;
+    width: 220px;
+    line-height: 15px;
+    font-size: 12px;
+  }
+  .img-group > div > img {
+    width: 100px;
+  }
+  
+}
+
+@media only screen and (min-width: 5464px) {
+  .Page1 {
+    height: 1457px;
+    width: 100%;
+  }
+  .Table-2 {
+    height: 1400px;
+  }
+  .parent-1 {
+    height: 1200px;
+    width: 1440px;
+  }
+  .parent-2 {
+    height: 1200px;
+    width: 1440px;
+    align-self: center;
+    background-size: cover;
+  }
+  .Tap-Table {
+    font-size: 60px;
+    width: 280px;
+  }
+  .Tap-Table-2 {
+    font-size: 60px;
+    width: 1600px;
+  }
+  .Lorem {
+    font-size: 70px;
+    line-height: 125px;
+  }
+  .text {
+    font-size: 65px;
+    line-height: 66px;
+    width: auto;
+    height: 600px;
+  }
+  .img-group > div > img {
+    width: 400px;
+  }
+}

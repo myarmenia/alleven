@@ -1,0 +1,109 @@
+.footer {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: scroll;  
+  justify-content: center;
+}
+.footer > div {
+  background-color: #f1f1f1;
+  width: 300px;
+  height: 510px;
+  margin: 20px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 30px;
+}
+.footer > .div1{
+    width: 400px;
+    height: 300px;
+    margin: 50px;
+    background-image: url("./img/halmets.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.footer > .div2{
+  width: 400px;
+  height: 300px;
+  margin: 50px;
+  background-image: url("./img/parts.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.title{
+  border-radius: 0 25px 25px;
+  background: black;
+  width: 200px;
+  height: 300px;
+  opacity: 0.6;
+  font-weight: bold;
+  color: white;
+  line-height: 300px;
+  text-align: left;
+}
+.div-img1,.div-img2,.div-img3,.div-img4,.div-img5,.div-img6{
+    width: 300p;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+.name{
+    position: relative;
+    left: 3.9em;
+    top:7em;
+    font-size: 0.9em;
+    color:  gray;
+  }
+  .name1{
+    position: relative;
+    left: 2.9em;
+    top:6em;
+    font-size: 25px;
+    color:  black;
+  }
+  .price{
+    position: relative;
+    left: 4em;
+    top:5em;
+    font-size: 25px;
+    color:  red;
+  }
+  .div-img1{
+    background-image: url("./img/m1.jpg");
+  }
+  .div-img2{
+    background-image: url("./img/m2.jpg");
+  }
+  .div-img3{
+    background-image: url("./img/m3.jpg");
+  }
+  .div-img4{
+    background-image: url("./img/m4.jpg");
+  }
+  .div-img5{
+    background-image: url("./img/m5.jpg");
+  }
+  .div-img6{
+    background-image: url("./img/m6.jpg");
+  }
+  p{
+    font-size: 11px;
+    text-align: justify;
+    line-height: 1.8;
+  }
+  .span1{
+    font-size: 20px;
+    color: gray;
+  }
+  .span2{
+    font-size: 20px;
+  }
+
+  button{
+    background: rgb(128, 12, 12);
+    color: white;
+  }
+  button:hover{
+    background: red;
+  }

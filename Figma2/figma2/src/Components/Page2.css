@@ -1,0 +1,55 @@
+.Page-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
+}
+
+.Company {
+  width: 100%;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120px;
+  color: #3db12f;
+}
+.Txt {
+  align-self: center;
+  width: 60vmax;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+  text-align: center;
+  color: #192c33;
+}
+
+@media only screen and (max-width: 600px) {
+  .Company {
+    font-size: 23px;
+  }
+  .Txt {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 5464px) {
+    .Company {
+        font-size: 60px;
+      }
+  .Txt {
+    width: 2800px;
+    font-size: 50px;
+    line-height: 50px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 414px){
+  .Txt {
+    width: 320px;
+    line-height: 20px;
+    border:  solid 2px red;
+  }
+}

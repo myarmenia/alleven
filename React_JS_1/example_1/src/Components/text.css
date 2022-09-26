@@ -1,0 +1,11 @@
+.text{
+    position: relative;
+    top: 5em;
+    font-size: 10px;
+  }
+button{
+    position: relative;
+    top: 4em;
+    left: 9em;
+    color: antiquewhite;
+}
